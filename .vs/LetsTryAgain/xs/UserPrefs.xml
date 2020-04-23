@@ -1,21 +1,5 @@
 ﻿<Properties StartupConfiguration="{E82B7634-5FDA-4EBB-B25C-40F4BF095CD8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Shared/_Layout.cshtml">
-    <Files>
-      <File FileName="Models/Player.cs" Line="9" Column="6" />
-      <File FileName="Startup.cs" Line="56" Column="1" />
-      <File FileName="Data/ApplicationDbContext.cs" Line="18" Column="16" />
-      <File FileName="Data/Migrations/20200422192459_Initial Migration.cs" Line="1" Column="1" />
-      <File FileName="Models/Stat.cs" Line="1" Column="1" />
-      <File FileName="Models/Team.cs" Line="1" Column="1" />
-      <File FileName="Models/ErrorViewModel.cs" Line="1" Column="1" />
-      <File FileName="Models/DummyData.cs" Line="11" Column="21" />
-      <File FileName="Data/Migrations/ApplicationDbContextModelSnapshot.cs" Line="1" Column="1" />
-      <File FileName="Controllers/PlayersController.cs" Line="1" Column="1" />
-      <File FileName="Views/_ViewImports.cshtml" Line="1" Column="1" />
-      <File FileName="Views/_ViewStart.cshtml" Line="1" Column="1" />
-      <File FileName="Views/Shared/_ValidationScriptsPartial.cshtml" Line="1" Column="1" />
-      <File FileName="Views/Shared/_Layout.cshtml" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -27,8 +11,11 @@
               </Node>
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Shared" expanded="True">
-                  <Node name="_Layout.cshtml" selected="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True">
+                  <Node name="bootstrap.css" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -38,7 +25,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.LetsTryAgain PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.ItemProperties.LetsTryAgain PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
