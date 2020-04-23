@@ -1,0 +1,103 @@
+@model IEnumerable<LetsTryAgain.Models.Player>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Position)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ranking)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProspectLevel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ChipLevel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CommitStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Potential)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sleeper)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Eligible)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Position)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ranking)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProspectLevel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChipLevel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CommitStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Potential)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sleeper)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Eligible)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PlayerId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PlayerId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PlayerId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</body>
+</html>
