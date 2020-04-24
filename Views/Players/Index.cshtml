@@ -1,17 +1,5 @@
 @model IEnumerable<LetsTryAgain.Models.Player>
 
-@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
 <p>
     <a asp-action="Create">Create New</a>
 </p>
@@ -41,9 +29,6 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.CommitStatus)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Potential)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Sleeper)
@@ -82,9 +67,6 @@
                 @Html.DisplayFor(modelItem => item.CommitStatus)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Potential)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Sleeper)
             </td>
             <td>
@@ -97,7 +79,3 @@
             </td>
         </tr>
 }
-    </tbody>
-</table>
-</body>
-</html>

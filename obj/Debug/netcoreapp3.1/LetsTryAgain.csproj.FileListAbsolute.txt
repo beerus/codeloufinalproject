@@ -2,7 +2,6 @@
 /Users/rajieraj/LetsTryAgain/bin/Debug/netcoreapp3.1/appsettings.json
 /Users/rajieraj/LetsTryAgain/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
 /Users/rajieraj/LetsTryAgain/bin/Debug/netcoreapp3.1/LetsTryAgain.StaticWebAssets.xml
-/Users/rajieraj/LetsTryAgain/bin/Debug/netcoreapp3.1/app.db
 /Users/rajieraj/LetsTryAgain/bin/Debug/netcoreapp3.1/LetsTryAgain.deps.json
 /Users/rajieraj/LetsTryAgain/bin/Debug/netcoreapp3.1/LetsTryAgain.runtimeconfig.json
 /Users/rajieraj/LetsTryAgain/bin/Debug/netcoreapp3.1/LetsTryAgain.runtimeconfig.dev.json
@@ -178,3 +177,10 @@
 /Users/rajieraj/LetsTryAgain/obj/Debug/netcoreapp3.1/Razor/Views/Players/Details.cshtml.g.cs
 /Users/rajieraj/LetsTryAgain/obj/Debug/netcoreapp3.1/Razor/Views/Players/Edit.cshtml.g.cs
 /Users/rajieraj/LetsTryAgain/obj/Debug/netcoreapp3.1/Razor/Views/Players/Index.cshtml.g.cs
+/Users/rajieraj/LetsTryAgain/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Debug.dll
+/Users/rajieraj/LetsTryAgain/obj/Debug/netcoreapp3.1/Razor/Views/Teams/Create.cshtml.g.cs
+/Users/rajieraj/LetsTryAgain/obj/Debug/netcoreapp3.1/Razor/Views/Teams/Delete.cshtml.g.cs
+/Users/rajieraj/LetsTryAgain/obj/Debug/netcoreapp3.1/Razor/Views/Teams/Details.cshtml.g.cs
+/Users/rajieraj/LetsTryAgain/obj/Debug/netcoreapp3.1/Razor/Views/Teams/Edit.cshtml.g.cs
+/Users/rajieraj/LetsTryAgain/obj/Debug/netcoreapp3.1/Razor/Views/Teams/Index.cshtml.g.cs
+/Users/rajieraj/LetsTryAgain/obj/Debug/netcoreapp3.1/Razor/Views/Home/About.cshtml.g.cs

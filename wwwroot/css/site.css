@@ -68,4 +68,20 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+  height: 2em;
+}
+.bg-img {
+    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1525876902033-8da51fbe1e59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80");
+}
+.padding {
+    padding-top: 3em;
+}
+
+.padding-bottom {
+    padding-bottom: 3em;
+}
+
+.white {
+    color: #fff;
 }

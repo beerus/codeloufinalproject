@@ -3,16 +3,14 @@ using System;
 using LetsTryAgain.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace LetsTryAgain.Data.Migrations
+namespace LetsTryAgain.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20200422192459_Initial Migration")]
-    partial class InitialMigration
+    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -34,10 +32,14 @@ namespace LetsTryAgain.Data.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("FirstName")
-                        .HasColumnType("TEXT");
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasMaxLength(50);
 
                     b.Property<string>("LastName")
-                        .HasColumnType("TEXT");
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasMaxLength(50);
 
                     b.Property<string>("Position")
                         .HasColumnType("TEXT");
@@ -54,10 +56,15 @@ namespace LetsTryAgain.Data.Migrations
                     b.Property<bool>("Sleeper")
                         .HasColumnType("INTEGER");
 
+                    b.Property<int?>("TeamId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Year")
                         .HasColumnType("TEXT");
 
                     b.HasKey("PlayerId");
+
+                    b.HasIndex("TeamId");
 
                     b.ToTable("Players");
                 });
@@ -118,8 +125,9 @@ namespace LetsTryAgain.Data.Migrations
 
             modelBuilder.Entity("LetsTryAgain.Models.Team", b =>
                 {
-                    b.Property<string>("Name")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("TeamId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Coach")
                         .HasColumnType("TEXT");
@@ -127,10 +135,10 @@ namespace LetsTryAgain.Data.Migrations
                     b.Property<string>("Division")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("NationalRank")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Name")
+                        .HasColumnType("TEXT");
 
-                    b.Property<int?>("PlayerId")
+                    b.Property<int>("NationalRank")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Roster")
@@ -139,9 +147,7 @@ namespace LetsTryAgain.Data.Migrations
                     b.Property<int>("StateRank")
                         .HasColumnType("INTEGER");
 
-                    b.HasKey("Name");
-
-                    b.HasIndex("PlayerId");
+                    b.HasKey("TeamId");
 
                     b.ToTable("Teams");
                 });
@@ -342,17 +348,17 @@ namespace LetsTryAgain.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("LetsTryAgain.Models.Player", b =>
+                {
+                    b.HasOne("LetsTryAgain.Models.Team", "Team")
+                        .WithMany("Players")
+                        .HasForeignKey("TeamId");
+                });
+
             modelBuilder.Entity("LetsTryAgain.Models.Stat", b =>
                 {
                     b.HasOne("LetsTryAgain.Models.Player", null)
                         .WithMany("Stats")
-                        .HasForeignKey("PlayerId");
-                });
-
-            modelBuilder.Entity("LetsTryAgain.Models.Team", b =>
-                {
-                    b.HasOne("LetsTryAgain.Models.Player", null)
-                        .WithMany("Teams")
                         .HasForeignKey("PlayerId");
                 });
 

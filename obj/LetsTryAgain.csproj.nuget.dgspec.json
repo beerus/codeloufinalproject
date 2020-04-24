@@ -14,7 +14,7 @@
         "outputPath": "/Users/rajieraj/LetsTryAgain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/rajieraj/.config/NuGet/NuGet.Config"
+          "/Users/rajieraj/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -59,6 +59,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[3.1.2, )"
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[3.1.1, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
