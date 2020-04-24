@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LetsTryAgain.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20200424083137_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20200424213646_thirdMigration")]
+    partial class thirdMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -45,9 +45,6 @@ namespace LetsTryAgain.Migrations
 
                     b.Property<string>("Position")
                         .HasColumnType("TEXT");
-
-                    b.Property<bool>("Potential")
-                        .HasColumnType("INTEGER");
 
                     b.Property<int>("ProspectLevel")
                         .HasColumnType("INTEGER");

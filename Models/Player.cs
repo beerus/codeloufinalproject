@@ -24,10 +24,10 @@ namespace LetsTryAgain.Models
         [Display(Name = "Position")]
         public string Position { get; set; }
         [Display(Name = "National Ranking")]
-        [Range(0, 1000)]
+        [Range(1, 999)]
         public int Ranking { get; set; }
         [Display(Name = "Prospect Level")]
-        [Range(0, 5)]
+        [Range(1, 5)]
         public int ProspectLevel { get; set; }
         [Display(Name = "Chips")]
         [Range(0, 2)]

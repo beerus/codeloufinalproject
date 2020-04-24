@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/rajieraj/LetsTryAgain/LetsTryAgain.csproj": {}
+    "/Users/rajieraj/LetsTryAgain/codeloufinalproject/LetsTryAgain.csproj": {}
   },
   "projects": {
-    "/Users/rajieraj/LetsTryAgain/LetsTryAgain.csproj": {
+    "/Users/rajieraj/LetsTryAgain/codeloufinalproject/LetsTryAgain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rajieraj/LetsTryAgain/LetsTryAgain.csproj",
+        "projectUniqueName": "/Users/rajieraj/LetsTryAgain/codeloufinalproject/LetsTryAgain.csproj",
         "projectName": "LetsTryAgain",
-        "projectPath": "/Users/rajieraj/LetsTryAgain/LetsTryAgain.csproj",
+        "projectPath": "/Users/rajieraj/LetsTryAgain/codeloufinalproject/LetsTryAgain.csproj",
         "packagesPath": "/Users/rajieraj/.nuget/packages/",
-        "outputPath": "/Users/rajieraj/LetsTryAgain/obj/",
+        "outputPath": "/Users/rajieraj/LetsTryAgain/codeloufinalproject/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/rajieraj/.nuget/NuGet/NuGet.Config"

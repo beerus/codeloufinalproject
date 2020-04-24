@@ -44,9 +44,6 @@ namespace LetsTryAgain.Migrations
                     b.Property<string>("Position")
                         .HasColumnType("TEXT");
 
-                    b.Property<bool>("Potential")
-                        .HasColumnType("INTEGER");
-
                     b.Property<int>("ProspectLevel")
                         .HasColumnType("INTEGER");
 

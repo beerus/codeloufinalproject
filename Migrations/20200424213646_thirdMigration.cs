@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace LetsTryAgain.Migrations
 {
-    public partial class InitialMigration : Migration
+    public partial class thirdMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -185,7 +185,6 @@ namespace LetsTryAgain.Migrations
                     ChipLevel = table.Column<int>(nullable: false),
                     TeamId = table.Column<int>(nullable: true),
                     CommitStatus = table.Column<bool>(nullable: false),
-                    Potential = table.Column<bool>(nullable: false),
                     Sleeper = table.Column<bool>(nullable: false),
                     Eligible = table.Column<bool>(nullable: false)
                 },
